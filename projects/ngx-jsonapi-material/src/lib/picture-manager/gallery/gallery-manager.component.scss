@@ -1,0 +1,13 @@
+@mixin setSizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+jam-upload #gallery-manager {
+    @include setSizes(auto, 100%);
+}
+
+#base-icon {
+    @include setSizes(auto, auto);
+    font-size: 8rem;
+}

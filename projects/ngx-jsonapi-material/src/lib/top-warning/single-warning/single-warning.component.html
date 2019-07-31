@@ -1,0 +1,5 @@
+<div class="layout-padding yellow-bg-400 width-100">
+    <span>{{ message }}</span>
+    <a [routerLink]="link" [queryParams]="linkQueryParams || {}" *ngIf="link">{{ linkText || 'Más información' }}</a>
+    <a [href]="link" target="_blank" *ngIf="externalLink">{{ linkText || 'Más información' }}</a>
+</div>
